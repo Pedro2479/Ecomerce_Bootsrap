@@ -8,6 +8,7 @@
     <link rel="stylesheet"  href="Css/style.css">
  <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>cards</title>
   </head>
@@ -22,18 +23,18 @@
       </button>
     
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown link
+              Categories
             </a>
             <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item " href="#">Action</a>
-              <a class="dropdown-item " href="#">Another action</a>
+              <a class="dropdown-item " href="drums.html">Drums</a>
+              <a class="dropdown-item " href="guitar.html">Guitars</a>
               <a class="dropdown-item " href="#">Something else here</a>
             </div>
           </li>
@@ -62,36 +63,56 @@
               Dropdown link
             </a>
             <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item " href="#">Action</a>
+              <a class="dropdown-item " href="formulario.html">registro</a>
               <a class="dropdown-item " href="#">Another action</a>
               <a class="dropdown-item " href="#">Something else here</a>
             </div>
           </li>
           
         </ul>
-     
-      </div>
+       
     </nav>
 
 
   <!-- barra de navegacion -->
            
   <!-- slider comercial -->
+<section class="content-fluid responsive">
 
 
-             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-              <div class="carousel-inner">
+
+
+           <div id="carouselExampleControls" class="carousel slide responsive" data-ride="carousel">
+                <div class="carousel-inner">
+            
                 <div class="carousel-item active">
-                  <img class="d-block w-100" src="img/tienda1.jpg" alt="First slide">
+                  <div class="carousel-caption d-none d-md-block blur ">
+                    <h1> prueba nuestros instrumentos</h1>
+                   <p>Aqui encontraras instrumentos de todos los tipos y marcas </p>
+                 </div>
+                  <img class="d-block w-100 img-fluid" src="img/tienda1.jpg" alt="First slide">
+                
+                </div>
+                <div class="carousel-item ">
+                  <div class="carousel-caption d-none d-md-block ">
+                    <h1>Ven hi prueba nuestros instrumentos</h1>
+                   <p>Aqui encontraras instrumentos de todos los tipos y marcas </p>
+                 </div>
+                  <img class="d-block w-100 img-fluid" src="img/estudio2.jpg" alt="Second slide">
+                </div>
+               <div class="carousel-item ">
+                <div class="carousel-caption d-none d-md-block ">
+                  <h1>Ven hi prueba nuestros instrumentos</h1>
+                 <p>Aqui encontraras instrumentos de todos los tipos y marcas </p>
+               </div>
+                  <img class="d-block w-100 img-fluid" src="img/estudio1.jpg" alt="Second slide">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="img/estudio2.jpg" alt="Second slide">
-                </div>
-               <div class="carousel-item">
-                  <img class="d-block w-100" src="img/estudio1.jpg" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="img/locales.jpg" alt="Second slide">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h1>Ven hi prueba nuestros instrumentos</h1>
+                   <p>Aqui encontraras instrumentos de todos los tipos y marcas </p>
+                 </div> 
+                  <img class="d-block w-100 img-fluid" src="img/locales.jpg" alt="Second slide">
                 </div>
               </div>
               <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -102,56 +123,54 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
               </a>
+             
             </div>
-
-
+</section>
+        
 <!--   final slider comercial-->
     <!--    cartas   tipo producto -->
 <section class="content">
- <h1><a href="#">Categorias --></a> </h1>
-        <div class="card-group responsive">
+  <div class="encabezados-contenedor">
+ <h4 class="productos"><a href="#">Categorias </a></h4>
+  </div>
+
+        <div class="card-group responsive "> 
             <div class="card">
               <img class="card-img-top" src="img/drums.jpg" alt="Card image cap">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Drums</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <a href="#" class="btn btn-dark">Go somewhere</a>
+                <a href="#" class="btn btn-dark">See More</a>
               </div>
             </div>
             <div class="card">
               <img class="card-img-top" src="img/guitar.jpg" alt="Card image cap">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Guitars</h5>
                 <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-dark">Go somewhere</a>
+                <a href="#" class="btn btn-dark">See Moore</a>
               </div>
             </div>
-            <div class="card">
+            <div class="card ">
               <img class="card-img-top" src="img/bass.jpg" alt="Card image cap">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Bass Guitar</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                <a href="#" class="btn btn-dark">Go somewhere</a>
+                <a href="#" class="btn btn-dark">See Moore</a>
               </div>
             </div>
             <div class="card">
                 <img class="card-img-top" src="img/pianno.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">Keyboards</h5>
                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <a href="#" class="btn btn-dark">Go somewhere</a>
+                  <a href="#" class="btn btn-dark">See More</a>
                 </div>
               </div>
 
-              <div class="card">
-                <img class="card-img-top" src="img/micro.jpg"  alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <a href="#" class="btn btn-dark">Go somewhere</a>
-                </div>
           
-        </div>
+          
+      
         </div>
        </section> 
          <!-- final cartas tipos producto  -->   
@@ -161,7 +180,7 @@
        <section class="content-fluid ">
       
 
-          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div id="carouselExampleControls" class="carousel slide slider2" data-ride="carousel">
             <div class="carousel-inner">
              
               <div class="carousel-item active w-100">
@@ -189,7 +208,10 @@
 
         <!-- Marcas de instrumentos-->
         <section class="content">
-          <h1><a href="#">Marcas --></a> </h1>
+        
+          <div class="encabezados-contenedor">
+            <h4 class="productos"><a href="#">Marcas</a> </h4>
+             </div>
                  <div class="card-group responsive">
                      <div class="card">
                        <img class="card-img-top" src="img/gibson.jpg" alt="Card image cap">
@@ -261,7 +283,9 @@
 
 <!-- seccion accesorios -->
             <section class="content">
-              <h1><a href="#">Accesorios --></a> </h1>
+              <div class="encabezados-contenedor">
+                <h4 class="productos"><a href="#">Accesorios</a> </h4>
+                 </div>
                      <div class="card-group responsive">
                          <div class="card">
                            <img class="card-img-top" src="img/pack_micros.jpg" alt="Card image cap">
@@ -366,11 +390,13 @@
     <div class="row">
 
       <!-- Grid column -->
-      <div class="col-md-12 py-5">
-        <div class="mb-5 flex-center">
-
-        </div>
-      </div>
+      <form class="example" methode="post" onsubmit="validar();">
+        <input type="text" placeholder="Search.." id="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+        <p id="parrafo"></p>
+      </form>
+        
+    
       <!-- Grid column -->
 
     </div>
@@ -382,6 +408,7 @@
 </footer>
 <!-- final Footer -->
 
+<script src="validar.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

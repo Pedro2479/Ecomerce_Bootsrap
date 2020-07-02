@@ -1,3 +1,20 @@
+
+/*  tags    */
+
+a{
+ 
+
+  text-decoration: none;
+  
+}
+
+h4{
+  font-size: 12px;
+
+}
+
+/* navegacion */
+
 .dropdown-menu{
   background-color:#343a40!important;
   color: #fff !important;
@@ -7,9 +24,6 @@
   background-color:#343a40!important;
   color: #fff !important;
 }
-
-
-
 
 .dropdown-item:hover{
   background-color:#000!important;
@@ -28,26 +42,194 @@
   color: #fff !important;
  font-size:15px;
 }
+/* slider*/
+
+.slider2{
+  margin-top:5px;
+}
+
+/* encabezados de los productos */
+.productos a:hover{
+  text-decoration: none;
+  color:#000;
+
+}
+.productos a{
+ 
+  text-decoration: none;
+  color:#000;
+}
+
+/* clases de cartas */
 
 
-@media (max-width: 575.98px) {
+
+
+.encabezados-contenedor{
   
+  margin:3px auto 5px;
+  width:200px;
+  height:70px;
+  border:solid 1px black;
+  padding-top:20px;
+  padding-bottom:10px;
+  border-radius:15px;
+  text-align: center;
+  background-color:#343a40;
+ 
+}
 
-    
+.productos a{
+  color: white;
+}
+
+
+.seccion-contenedor{
+width:100%;
+height:50px;
+}
+/*  buscador*/
+
+
+
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  background-image: url("../img/search.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: lightblue;
+  height: 47px;
+  width:50px;
+  padding: 20px;
+  color: white;
+  border: 1px solid grey;
+  border-left: none; 
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background-image: url("../img/search.png");
+  background-repeat: no-repeat;
+  background-color: white;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/* formularios */
+* {
+  box-sizing: border-box;
+}
+
+/* Style the search field */
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+
+}/*
+.textos h1{
+  font-size: 100px;
+  color:#fff ;
+}
+.textos p{
+  font-size: 50px;
+}
+
+.blur{
+  background-color:rgba( 0, 0, 0, 0.4);
+}
+/* media Querys  
+
+.textos{
+  display:flex;
+  flex-wrap: wrap;
+}
+
+*/
+
+
+
+
+@media only screen and (max-width:1200px)  { 
+
+  .carousel-caption h1 {
+    font-size: 45px;
+  }
+  .carousel-caption p {
+    font-size: 30px;
+  }
+ 
+
+ }
+
+ @media only screen and (max-width: 992px){  
+  .carousel-caption h1 {
+    font-size: 40px;
+  }
+  .carousel-caption p {
+    font-size: 25px;
+  }
+ }
+
+@media only screen and (max-width: 768px)  {
+
+.carousel-caption  h1 {
+    font-size: 35px;
+  }
+  .carousel-caption p {
+    font-size: 20px;
+  }
+}
+
+
+
+@media only screen and  (min-width: 576px) { 
+.carousel-caption h1 {
+    font-size: 32px;
+  }
+  .carousel-caption p {
+    font-size: 18px;
   }
 
-
-
-
-
-
-
-@media (min-width: 576px) and (max-width: 767.98px) {  }
-
-
-@media (min-width: 768px) and (max-width: 991.98px) { }
-
-@media (min-width: 992px) and (max-width: 1199.98px) {  }
-
-
-@media (min-width: 1200px) {  }
+ }
