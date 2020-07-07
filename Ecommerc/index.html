@@ -9,12 +9,12 @@
  <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  
     <title>cards</title>
   </head>
   <body>
     <!--principio barra de navegacion-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark responsive">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark align-items-start  responsive">
       
       <a class="navbar-brand" href="#"><img src="img/logoM.png"></a>
 
@@ -23,7 +23,7 @@
       </button>
     
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav">
           <li class="nav-item active">
             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
@@ -35,84 +35,102 @@
             <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item " href="drums.html">Drums</a>
               <a class="dropdown-item " href="guitar.html">Guitars</a>
-              <a class="dropdown-item " href="#">Something else here</a>
+              <a class="dropdown-item " href="#">Bass Guitar</a>
+              <a class="dropdown-item " href="#">Keyboards</a>
             </div>
           </li>
           <li class="nav-item dropdown centrar ">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown link
+             Brands
             </a>
             <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item " href="#">Action</a>
-              <a class="dropdown-item " href="#">Another action</a>
-              <a class="dropdown-item " href="#">Something else here</a>
+              <a class="dropdown-item " href="#">Ibanez</a>
+              <a class="dropdown-item " href="#">Zidjan</a>
+              <a class="dropdown-item " href="#">Fender</a>
+              <a class="dropdown-item " href="#">Remo</a>
+              <a class="dropdown-item " href="#">Guibson</a>
+              <a class="dropdown-item " href="#">Tama</a>
+              <a class="dropdown-item " href="#">Yamaha</a>
+              <a class="dropdown-item " href="#">Paiste</a>
             </div>
           </li>
           <li class="nav-item dropdown centrar ">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown link
+            Accessories
             </a>
             <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item " href="#">Action</a>
-              <a class="dropdown-item " href="#">Another action</a>
-              <a class="dropdown-item " href="#">Something else here</a>
+              <a class="dropdown-item " href="#">Micros</a>
+              <a class="dropdown-item " href="#">Covers</a>
+              <a class="dropdown-item " href="#">Sticks</a>
+              <a class="dropdown-item " href="#">Crash</a>
+              <a class="dropdown-item " href="#">Jacks</a>
+              <a class="dropdown-item " href="#"> Patches</a>
+              <a class="dropdown-item " href="#"> Headphones</a>
+              <a class="dropdown-item " href="#">Sets of practices</a>
             </div>
           </li>
           <li class="nav-item dropdown centrar ">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown link
+            Register
             </a>
             <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item " href="formulario.html">registro</a>
-              <a class="dropdown-item " href="#">Another action</a>
-              <a class="dropdown-item " href="#">Something else here</a>
+              <a class="dropdown-item " href="formulario.html">Register</a>
+              <a class="dropdown-item " href="#">Log in</a>
+              <a class="dropdown-item " href="#">Sing in</a>
+             
+             
             </div>
           </li>
-          
+         
         </ul>
-       
+        <form class="example ml-auto" methode="post" onsubmit="validar();">
+          <input type="text" placeholder="Search.." id="search">
+          <button type="submit" class="bg-dark"><i class="fa fa-search"></i></button>
+          <p id="parrafo"></p>
+        </form>
+          
     </nav>
-
-
   <!-- barra de navegacion -->
            
   <!-- slider comercial -->
 <section class="content-fluid responsive">
 
-
-
-
-           <div id="carouselExampleControls" class="carousel slide responsive" data-ride="carousel">
+           <div id="carouselExampleControls" class="carousel slide w-100" data-ride="carousel">
                 <div class="carousel-inner">
             
                 <div class="carousel-item active">
-                  <div class="carousel-caption d-none d-md-block blur ">
-                    <h1> prueba nuestros instrumentos</h1>
-                   <p>Aqui encontraras instrumentos de todos los tipos y marcas </p>
-                 </div>
                   <img class="d-block w-100 img-fluid" src="img/tienda1.jpg" alt="First slide">
-                
-                </div>
-                <div class="carousel-item ">
-                  <div class="carousel-caption d-none d-md-block ">
-                    <h1>Ven hi prueba nuestros instrumentos</h1>
-                   <p>Aqui encontraras instrumentos de todos los tipos y marcas </p>
+                  <div class="carousel-caption d-md-block">
+                   
+                    <h1> Try our instruments</h1>
+                   <p> Here you will find instruments of all types and brands </p>
                  </div>
+               </div>
+                <div class="carousel-item ">
                   <img class="d-block w-100 img-fluid" src="img/estudio2.jpg" alt="Second slide">
+                  <div class="carousel-caption d-md-block ">
+                  
+                    <h1>Two recording studios</h1>
+                   <p>Professional recordings</p>
+                 </div>
+                  
                 </div>
                <div class="carousel-item ">
-                <div class="carousel-caption d-none d-md-block ">
-                  <h1>Ven hi prueba nuestros instrumentos</h1>
-                 <p>Aqui encontraras instrumentos de todos los tipos y marcas </p>
+                <img class="d-block w-100 img-fluid" src="img/estudio1.jpg" alt="Second slide">
+                <div class="carousel-caption d-md-block ">
+                  <h1> Studies for Amateurs and professionals</h1> 
+                 <p>Specialized technical team</p>
                </div>
-                  <img class="d-block w-100 img-fluid" src="img/estudio1.jpg" alt="Second slide">
+                
                 </div>
                 <div class="carousel-item">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h1>Ven hi prueba nuestros instrumentos</h1>
-                   <p>Aqui encontraras instrumentos de todos los tipos y marcas </p>
-                 </div> 
                   <img class="d-block w-100 img-fluid" src="img/locales.jpg" alt="Second slide">
+                  <div class="carousel-caption d-md-block">
+                   
+                    <h1> Equipped test rooms</h1>
+                   <p>Equipped premises only bring the instrument</p>
+                 </div> 
+         
                 </div>
               </div>
               <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -131,7 +149,7 @@
     <!--    cartas   tipo producto -->
 <section class="content">
   <div class="encabezados-contenedor">
- <h4 class="productos"><a href="#">Categorias </a></h4>
+ <h4 class="productos"><a href="#">Categories </a></h4>
   </div>
 
         <div class="card-group responsive "> 
@@ -139,7 +157,7 @@
               <img class="card-img-top" src="img/drums.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Drums</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">Drums of all the gammas with discounts of 10% for our 50th anniversary</p>
                 <a href="#" class="btn btn-dark">See More</a>
               </div>
             </div>
@@ -147,7 +165,7 @@
               <img class="card-img-top" src="img/guitar.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Guitars</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text"> Guitars of the best brands and prices in addition to the 30% discount on the guibson series gold</p>
                 <a href="#" class="btn btn-dark">See Moore</a>
               </div>
             </div>
@@ -155,7 +173,7 @@
               <img class="card-img-top" src="img/bass.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Bass Guitar</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                <p class="card-text">Ibanez bass guitars for great musicians with discounts with the purchase of the metal zone pedal</p>
                 <a href="#" class="btn btn-dark">See Moore</a>
               </div>
             </div>
@@ -163,95 +181,94 @@
                 <img class="card-img-top" src="img/pianno.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Keyboards</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">Yamaha D3000 keyboards at the best price and pay in 5 months 100% financed</p>
                   <a href="#" class="btn btn-dark">See More</a>
                 </div>
-              </div>
-
-          
-          
-      
+  </div>   
         </div>
        </section> 
          <!-- final cartas tipos producto  -->   
 
          <!--  Slider ofertas -->
-       
-       <section class="content-fluid ">
-      
-
-          <div id="carouselExampleControls" class="carousel slide slider2" data-ride="carousel">
-            <div class="carousel-inner">
-             
-              <div class="carousel-item active w-100">
-                <a href="google.com"> <img src="img/guitar1.jpg" class="d-block w-100" alt="lib"></a>
-                <div class="carousel-caption d-none d-md-block">
-                   <h5>prueba 1</h5>
-                  <p>papapapapapap</p>
+         <section class="content-fluid responsive">
+     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+               <div class="carousel-inner">
+           
+               <div class="carousel-item active">
+                 <img class="d-block w-100 img-fluid" src="img/guitar2.jpg" alt="First slide">
+                 <div class="carousel-caption d-md-block ">
+                  
+                   <h1> Month's offer </h1>
+                  <p>Guipson sesries rock </p>
                 </div>
               </div>
-
-
-              <div class="carousel-item">
-                <a href="youtube.com">  <img src="img/guitar2.jpg" class="d-block w-100" alt="lib"></a>
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>prueba 2</h5>
-                  <p>papapapapapapap</p>
+               <div class="carousel-item ">
+                 <img class="d-block w-100 img-fluid" src="img/guitar1.jpg" alt="Second slide">
+                 <div class="carousel-caption d-md-block ">
+                  <h1>Month's offer </h1>
+                  <p>Guipson sesries rock & gold </p>
                 </div>
-              </div>
-             
-            </div>
-          
-          </div>
+                 
+               </div>
+           
+               </div>
+             </div>
+         
+            
+           </div>
 </section>
     <!-- final Slider ofertas-->
 
         <!-- Marcas de instrumentos-->
-        <section class="content">
+   
         
-          <div class="encabezados-contenedor">
-            <h4 class="productos"><a href="#">Marcas</a> </h4>
-             </div>
+          <section class="content">
+            <div class="encabezados-contenedor">
+           <h4 class="productos"><a href="#"> Brands </a></h4>
+            </div>
+          
                  <div class="card-group responsive">
                      <div class="card">
                        <img class="card-img-top" src="img/gibson.jpg" alt="Card image cap">
                        <div class="card-body">
-                         <h5 class="card-title">Card title</h5>
-                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                         <a href="#" class="btn btn-dark">Go somewhere</a>
+                         <h5 class="card-title">Guipson</h5>
+                         <p class="card-text">
+                          All guipson high and low gamma series</p>
+                         <a href="#" class="btn btn-dark"> know more</a>
                        </div>
                      </div>
                      <div class="card">
                        <img class="card-img-top" src="img/fender.jpg" alt="Card image cap">
                        <div class="card-body">
-                         <h5 class="card-title">Card title</h5>
-                         <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                         <a href="#" class="btn btn-dark">Go somewhere</a>
+                         <h5 class="card-title">Fender</h5>
+                         <p class="card-text"> Fender classics electric and acoustic guitars</p>
+                         <a href="#" class="btn btn-dark">Know more</a>
                        </div>
                      </div>
                      <div class="card">
                        <img class="card-img-top" src="img/paiste.jpg" alt="Card image cap">
                        <div class="card-body">
-                         <h5 class="card-title">Card title</h5>
-                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                         <a href="#" class="btn btn-dark">Go somewhere</a>
+                         <h5 class="card-title">Paiste</h5>
+                         <p class="card-text">
+                          Crushes and patches of all ranges</p>
+                         <a href="#" class="btn btn-dark">Know more</a>
                        </div>
                      </div>
                      <div class="card">
                          <img class="card-img-top" src="img/zidjan.jpg" alt="Card image cap">
                          <div class="card-body">
-                           <h5 class="card-title">Card title</h5>
-                           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                           <a href="#" class="btn btn-dark">Go somewhere</a>
+                           <h5 class="card-title">Zidjan</h5>
+                           <p class="card-text">Discounted high gamma crashes for their 50th anniversary</p>
+                           <a href="#" class="btn btn-dark">Know more</a>
                          </div>
                        </div>
          
                        <div class="card">
                          <img class="card-img-top" src="img/tama.jpg" alt="Card image cap">
                          <div class="card-body">
-                           <h5 class="card-title">Card title</h5>
-                           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                           <a href="#" class="btn btn-dark">Go somewhere</a>
+                           <h5 class="card-title">Tama</h5>
+                           <p class="card-text"> All tama components at the best price</p>
+                           <a href="#" class="btn btn-dark">Know more</a>
                          </div>
                    
                  </div>
@@ -260,72 +277,69 @@
             <!-- final Marcas de instrumentos -->
 
 <!-- banner informacion estudio grabacion-->
-<section class="banner">
-  <div class="container-fluid banner__container" >
+<section class="content-fluid">
+ 
       <div class="row banner__row">
-          <div class="col-12 col-lg-6 banner__paragraphs">
+          <div class="col-12 col-lg-12 banner__paragraphs">
               <div class="paragraphs__container">
-                  <h1 class="m-4 hero-heading paragraphs__title m-0">Lorem Ipsum Dolor Sit Amet </h1>
-                  <h2 class="m-4 paragraphs__subtitle">Lorem Ipsum Dolor Sit Amet</h2>
-              </div>
-              <button class="ml-4 paragraphs__button shadow btn btn-secondary">Primary</button>
+                  <h1 class="m-4 hero-heading paragraphs__title m-0"> Studio recording offer with production included </h1>
+                  <h4 class="m-4 paragraphs__subtitle">During this month recording production at half price and free distribution</h4>
+                  <button class="ml-4 paragraphs__button shadow btn btn-secondary">Primary</button>
+             
+                </div>
+            
           </div>
-          <div class="col-12 col-lg-6 banner__media">
-              <div class="banner__images">
-                  <div class="images__phone"></div>
-                  <div class="images__capture"></div>
-              </div>
-          </div>
+         
       </div>
-  </div>
+ 
 </section>
 <!--  final informacion estudiio de grabacion-->
 
 <!-- seccion accesorios -->
-            <section class="content">
+            <section class="content-fluid">
               <div class="encabezados-contenedor">
-                <h4 class="productos"><a href="#">Accesorios</a> </h4>
+                <h4 class="productos"><a href="#">Accesories</a> </h4>
                  </div>
                      <div class="card-group responsive">
                          <div class="card">
                            <img class="card-img-top" src="img/pack_micros.jpg" alt="Card image cap">
                            <div class="card-body">
-                             <h5 class="card-title">Card title</h5>
-                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                             <a href="#" class="btn btn-dark">Go somewhere</a>
+                             <h5 class="card-title"> Microphone set</h5>
+                             <p class="card-text">Set of microphones for the battery</p>
+                             <a href="#" class="btn btn-dark">Know more</a>
                            </div>
                          </div>
                          <div class="card">
                            <img class="card-img-top" src="img/funda_guitarra.jpg" alt="Card image cap">
                            <div class="card-body">
-                             <h5 class="card-title">Card title</h5>
-                             <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                             <a href="#" class="btn btn-dark">Go somewhere</a>
+                             <h5 class="card-title">Covers for all instruments</h5>
+                             <p class="card-text">The best covers to transport your instruments</p>
+                             <a href="#" class="btn btn-dark">Know more</a>
                            </div>
                          </div>
                          <div class="card">
                            <img class="card-img-top" src="img/pack_baquetas.jpg" alt="Card image cap">
                            <div class="card-body">
-                             <h5 class="card-title">Card title</h5>
-                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                             <a href="#" class="btn btn-dark">Go somewhere</a>
+                             <h5 class="card-title">Sticks set</h5>
+                             <p class="card-text">Firth virch and Remo A5, A4 stick packs</p>
+                             <a href="#" class="btn btn-dark">Know more</a>
                            </div>
                          </div>
                          <div class="card">
-                             <img class="card-img-top" src="img/pack_platos.png" alt="Card image cap">
+                             <img class="card-img-top" src="img/pack_platos.jpg" alt="Card image cap">
                              <div class="card-body">
-                               <h5 class="card-title">Card title</h5>
-                               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                               <a href="#" class="btn btn-dark">Go somewhere</a>
+                               <h5 class="card-title">Cymbal set</h5>
+                               <p class="card-text">10, 12, 16 and 24 inch cymbal set with 10% discount when buying a right or a china</p>
+                               <a href="#" class="btn btn-dark">Know more</a>
                              </div>
                            </div>
              
                            <div class="card">
                              <img class="card-img-top" src="img/auriculares.jpg" alt="Card image cap">
                              <div class="card-body">
-                               <h5 class="card-title">Card title</h5>
-                               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                               <a href="#" class="btn btn-dark">Go somewhere</a>
+                               <h5 class="card-title">Headphones</h5>
+                               <p class="card-text">Dj or production headphones at the best prices</p>
+                               <a href="#" class="btn btn-dark">Know more</a>
                              </div>
                        
                      </div>
@@ -335,78 +349,71 @@
 <!--  final  seccion accesorios  -->
 
 <!-- Banner -->
-<section class="banner">
-  <div class="container-fluid banner__container" >
-      <div class="row banner__row">
-          <div class="col-12 col-lg-6 banner__paragraphs">
-              <div class="paragraphs__container">
-                  <h1 class="m-4 hero-heading paragraphs__title m-0">Lorem Ipsum Dolor Sit Amet </h1>
-                  <h2 class="m-4 paragraphs__subtitle">Lorem Ipsum Dolor Sit Amet</h2>
-              </div>
-              <button class="ml-4 paragraphs__button shadow btn btn-secondary">Primary</button>
-          </div>
-         
-</section>
 
+ <section class="content-fluid">
+  <div class="row banner__row">
+      <div class="col-12 col-lg-12 banner__paragraphs">
+          <div class="paragraphs__container">
+              <h1 class="m-4 hero-heading paragraphs__title m-0"> Equipped test rooms</h1>
+              <h4 class="m-4 paragraphs__subtitle">In the premises there are amplifiers, sound tables and fully equipped batteries.</h4>
+              <button class="ml-4 paragraphs__button shadow btn btn-secondary">Know more</button>
+         
+            </div>
+        
+      </div>
+
+</div>
+    </section>
 
 
 <!--final banner-->
-
-
-
-              <!-- seccion maps Y informacion adicional--> 
-
-
-<section class="content-fluid responsive">
-  <section class="text-black float-right"style="width:50%">
-    <h2 class="text-uppercase mt-4 font-weight-bold ">dove siamo</h2>
-  
-          <a href="tel:+">(+39) 123456</a><br>
-          <a href="tel:+">(+39) 123456</a><br>
-          <a href="">info@test.it</a><br>
-          Piazza del Colosseo, 1, 00184 Roma<br>
-          Piazza del Colosseo, 1, 00184 Roma<br>
-       
+       <!-- seccion maps Y informacion adicional--> 
+ 
+<section class="content-fluid bg-dark" >
+ <section class="socialm float-right text-white">
+    <a class="fb-ic mr-3" role="button" href="#"><i class="fa fa-lg fa-facebook"></i></a>
+    <!--Twitter-->
+    <a class="tw-ic mr-3" role="button"  href="#"><i class="fa fa-lg fa-twitter"></i></a>
+    
+    <a class="li-ic mr-3" role="button"  href="#"><i class="fa fa-lg fa-linkedin"></i></a>
+    <!--Instagram-->
+    <a class="ins-ic mr-3" role="button"  href="#"><i class="fa fa-lg fa-instagram"></i></a>
+    <!--Pinterest-->
     </section>
 
-<div id="map-container-google-2" class="z-depth-1-half map-container responsive" style="height: 500px">
+  <section class="text-white centrar " style="width:50%">
+    <h2 class="text-uppercase mt-4 font-weight-bold ">COntact</h2>
+  
+          <a href="tel:+">(+34) 123456</a><br>
+          <a href="tel:+">(+34) 123456</a><br>
+          <a href="">info@Arpegio.es</a><br>
+        Hospitalet del llobregat, 39, 08902 Barcelona<br>
+        
+      
+        </section>
+      
+<div id="map-container-google-2" class="z-depth-1-half map-container responsive md" style="height: 50%">
      
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2994.4054643578643!2d2.1262427149264562!3d41.36527470532961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a498945d4eccf1%3A0x3d294f842779a674!2sCarrer%20de%20Jacint%20Verdaguer%2C%2036%2C%2008902%20Hospitalet%20de%20Llobregat%2C%20Barcelona!5e0!3m2!1sca!2ses!4v1592307848029!5m2!1sca!2ses" 
- width="50%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+  <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2994.4054643578643!2d2.1262427149264562!3d41.36527470532961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a498945d4eccf1%3A0x3d294f842779a674!2sCarrer%20de%20Jacint%20Verdaguer%2C%2036%2C%2008902%20Hospitalet%20de%20Llobregat%2C%20Barcelona!5e0!3m2!1sca!2ses!4v1592307848029!5m2!1sca!2ses" 
+ width="100%" height="500px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
   </iframe>
  </div>
-
 
 </section>
  <!-- final  Maps y informacion adicional -->
 <!-- Footer -->
 
-<footer class=" page-footer font-small bg-dark ">
+<!--Facebook-->
+<footer class="content-fluid">
+<!--Facebook-->
 
-  <!-- Footer Elements -->
-  <div class="container">
 
-    <!-- Grid row-->
-    <div class="row">
-
-      <!-- Grid column -->
-      <form class="example" methode="post" onsubmit="validar();">
-        <input type="text" placeholder="Search.." id="search">
-        <button type="submit"><i class="fa fa-search"></i></button>
-        <p id="parrafo"></p>
-      </form>
-        
-    
-      <!-- Grid column -->
-
-    </div>
-    <!-- Grid row-->
-
-  </div>
-  <!-- Footer Elements -->
 
 </footer>
-<!-- final Footer -->
+
+
+
+
 
 <script src="validar.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
