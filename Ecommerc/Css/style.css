@@ -8,8 +8,28 @@ a{
   
 }
 
-/* navegacion */
+.dark-text{
+  text-decoration: none;
+  color: #343a40;
+  
+}
 
+.dark-text:hover{
+  text-decoration: none;
+  color:goldenrod;
+  
+}
+.fa-user{
+  color:black;
+}
+.fa-user-plus{
+  color:black;
+}
+/* navegacion */
+.nav-link{
+  text-decoration: none;
+  color:#fff;
+} 
 .dropdown-menu{
   background-color:#343a40!important;
   color: #fff !important;
@@ -107,7 +127,9 @@ height:50px;
 /*  buscador*/
 
 
-
+form{
+  padding-right: 1rem;
+}
 
 form.example input[type=text] {
   padding: 10px;
@@ -116,6 +138,7 @@ form.example input[type=text] {
   float: left;
   width: 80%;
   background: #f1f1f1;
+  
 }
 
 form.example button {
