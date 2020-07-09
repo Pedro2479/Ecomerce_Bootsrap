@@ -5,18 +5,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet"  href="/css/style.css">
+   
  <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+   <link rel="stylesheet"  href="/css/style.css">
     <title>cards</title>
   </head>
   <body>
     <!--principio barra de navegacion-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark align-items-start  responsive">
       
-      <a class="navbar-brand" href="#"><img src="../img/logoM.png"></a>
+      <a class="navbar-brand" href="../index.html"><img src="../img/logoM.png"></a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -33,8 +33,8 @@
               Categories
             </a>
             <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item " href="drums.html">Drums</a>
-              <a class="dropdown-item " href="guitar.html">Guitars</a>
+              <a class="dropdown-item " href="../html/drums.html">Drums</a>
+              <a class="dropdown-item " href="../html/guitar.html">Guitars</a>
               <a class="dropdown-item " href="#">Bass Guitar</a>
               <a class="dropdown-item " href="#">Keyboards</a>
             </div>
@@ -75,14 +75,16 @@
             </a>
             <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item " href="formulario.html">Register</a>
-              <a class="dropdown-item " href="#">Log in</a>
-              <a class="dropdown-item " href="#">Sing in</a>
-             
-             
-            </div>
-          </li>
-         
+     </div>
+           </li>
+           <button type="button" class="btn btn-secondary bg-dark align-items-end" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Log in</button>
+           <button type="button" class="btn btn-secondary bg-dark align-items-end" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Log in</button>
+       
         </ul>
+
+
+
+
         <form class="example ml-auto" methode="post" onsubmit="validar();">
           <input type="text" placeholder="Search.." id="search">
           <button type="submit" class="bg-dark"><i class="fa fa-search"></i></button>

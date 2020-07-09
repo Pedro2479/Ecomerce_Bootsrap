@@ -57,17 +57,19 @@ a{
 
 .encabezados-contenedor{
   
-  margin:3px auto 5px;
+  margin: 0 1rem 0 1rem;
 
   border:solid 1px black;
-  padding-top:20px;
-  padding-bottom:10px;
+  padding:1rem;
+ 
 
   text-align: center;
   background-image: url(../img/degradado.jpg);
 
 }
-
+.content-fluid{
+  margin: 0 1rem 0 1rem;
+}
 .productos a{
   color: white;
 }
@@ -80,16 +82,25 @@ height:50px;
 
 .paragraphs__container{
   
-  background-image: url(/img/degradado2.jpg);
+  background-image: url(../img/degradado2.jpg);
   color:white;
   padding:10px;
-  margin-bottom:0px;
+  margin: 0 1rem 0 1rem;
 
 }
 
 
 .card-group{
-  margin:1rem;
+  margin:0 1rem 0 1rem;
+}
+
+.content-fluid{
+  margin: 0 1rem 0 1rem;
+
+}
+
+.row{
+  align-content: center;
 }
 
 
@@ -178,9 +189,6 @@ form.example::after {
   background-color: rgba(8, 8, 8, 0.4);
   color:white;
 }
-.centrar{
-  margin-left:2rem;
-}
 
 
 @media only screen and (max-width:1200px)  {
@@ -221,7 +229,6 @@ form.example::after {
   .carousel-caption p {
     font-size: 30px;
   }
-
   
 }
 
